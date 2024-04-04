@@ -1,0 +1,88 @@
+<html>
+<style>
+
+input[type=text], select {
+  width: 30%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius:2px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 25%;
+  background-color: #38b100;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #08750d;
+}
+input[type=reset] {
+  width: 25%;
+  background-color: #db2929d9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #c70404;
+}
+body{
+  background-color:#f8e5c2 ;
+}
+
+
+input[type=register]:hover {
+  background-color: #45a049;
+}
+input[type=text]:focus {
+  background-color: rgb(164, 241, 164);
+}
+
+div {
+  border-radius: 2px;
+  background-color:#dfc28c;
+  padding: 20px;
+}
+.center {
+  border: thick double #010507;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+</style>
+<body>
+<div class="center">
+    <h1> <center>Login </center></h1>
+    <form action="/action_page.php">
+
+    <label for="username"><b>Username:</b> </label>
+    <input type="text" id="username" name="username" required><br><br>
+      
+    <label for="password"><b>Password: </b></label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="submit" value="login">
+    <input type="reset" value="Reset">
+    
+  </form>
+</div>
+
+</body>
+</html>
+
